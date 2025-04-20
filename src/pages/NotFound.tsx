@@ -1,5 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,14 +15,23 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen bg-dark flex flex-col">
+      <Navbar />
+      <div className="flex-grow flex items-center justify-center px-6">
+        <div className="text-center">
+          <div className="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet to-indigo mb-6">404</div>
+          <h1 className="text-4xl font-bold text-white mb-6">Page Not Found</h1>
+          <p className="text-xl text-coolGray mb-8 max-w-md mx-auto">
+            The page you are looking for doesn't exist or has been moved.
+          </p>
+          <a href="/">
+            <GradientButton>
+              Return to Home
+            </GradientButton>
+          </a>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
