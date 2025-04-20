@@ -1,7 +1,6 @@
 
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
-import Image from 'next/image'; // Note: You might need to add Next.js or adjust for Vite
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,15 +8,8 @@ const Navbar = () => {
   return (
     <nav className="py-4 md:py-6 px-6 md:px-12 lg:px-24 w-full fixed top-0 z-50 bg-dark/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo - Replace with actual Fusentra logo when provided */}
         <div className="flex items-center">
-          <Image 
-            src="/placeholder-logo.png" 
-            alt="Fusentra Logo" 
-            width={150} 
-            height={50} 
-            className="h-10 w-auto"
-          />
+          <h1 className="text-2xl font-bold text-white">Fusentra</h1>
         </div>
 
         {/* Desktop Menu */}
@@ -56,3 +48,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
