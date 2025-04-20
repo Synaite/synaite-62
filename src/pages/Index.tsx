@@ -1,35 +1,22 @@
+
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
-import PricingSection from "@/components/PricingSection";
+import AboutSection from "@/components/AboutSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import HardwareSection from "@/components/HardwareSection";
-import OSPanelsSection from "@/components/OSPanelsSection";
-import PartnersSection from "@/components/PartnersSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import MigrationCTA from "@/components/MigrationCTA";
 import FAQSection from "@/components/FAQSection";
-import BlogSection from "@/components/BlogSection";
-import SupportSection from "@/components/SupportSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-dark text-white">
+    <div className="min-h-screen bg-[#050A1A] text-white">
       <Navbar />
       <main>
         <HeroSection />
-        <StatsSection />
+        <AboutSection />
         <FeaturesSection />
-        <HardwareSection />
-        <PricingSection />
-        <OSPanelsSection />
-        <PartnersSection />
-        <TestimonialsSection />
-        <MigrationCTA />
         <FAQSection />
-        <BlogSection />
-        <SupportSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

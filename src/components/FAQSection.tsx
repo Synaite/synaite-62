@@ -10,13 +10,13 @@ interface FAQItemProps {
 
 const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
   return (
-    <div className="border-b border-violet/20 last:border-0">
+    <div className="border-b border-[#4A90E2]/20 last:border-0">
       <button
         className="flex justify-between items-center w-full py-6 text-left"
         onClick={onClick}
       >
         <h3 className="text-lg font-semibold text-white">{question}</h3>
-        <span className="ml-6 flex-shrink-0 text-coolGray">
+        <span className="ml-6 flex-shrink-0 text-[#B0B5BF]">
           {isOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
@@ -30,7 +30,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
       </button>
       {isOpen && (
         <div className="pb-6">
-          <p className="text-coolGray">{answer}</p>
+          <p className="text-[#B0B5BF]">{answer}</p>
         </div>
       )}
     </div>
@@ -42,42 +42,42 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What is a dedicated server and why would I need one?",
-      answer: "A dedicated server is a physical server where all resources are dedicated to a single client. Unlike shared hosting, you get full access to all CPU, RAM, storage, and bandwidth. Dedicated servers are ideal for websites with high traffic, applications requiring specific configurations, businesses needing enhanced security, or any project demanding superior performance and reliability."
+      question: "What types of AI solutions do you offer?",
+      answer: "We specialize in creating customized AI solutions that include automated customer service bots, data analysis tools, process automation, predictive analytics, and integration with existing business systems. Our solutions are tailored to address your specific business challenges."
     },
     {
-      question: "How quickly can my dedicated server be provisioned?",
-      answer: "Most of our standard dedicated server configurations can be provisioned within 4-24 hours. Custom configurations may take 1-3 business days depending on the specifications and availability. For urgent requirements, we offer expedited setup for select configurations, which can be ready in as little as 2 hours."
+      question: "How do you ensure AI solutions integrate with our existing systems?",
+      answer: "Our team conducts thorough assessments of your current infrastructure and workflows. We design solutions with compatibility in mind, utilizing APIs, middleware, and custom connectors when necessary. Throughout implementation, we work closely with your IT team to ensure smooth integration with minimal disruption."
     },
     {
-      question: "Do you offer managed or unmanaged dedicated servers?",
-      answer: "We offer both managed and unmanaged dedicated server options. With managed servers, our team handles system updates, security patches, monitoring, and basic troubleshooting. Unmanaged servers provide full root access but leave maintenance responsibilities to you. We also offer semi-managed options if you need a middle ground between these two service levels."
+      question: "What ROI can we expect from implementing your AI solutions?",
+      answer: "ROI varies based on the specific solution and industry, but our clients typically see significant benefits in operational efficiency, cost reduction, and revenue opportunities. We establish clear metrics at the project outset and provide regular reports to track performance against these benchmarks."
     },
     {
-      question: "What kind of support do you provide?",
-      answer: "We provide 24/7/365 support via ticket system, live chat, and phone. Our support team includes skilled technicians who can assist with hardware issues, network problems, OS questions, and control panel configurations. For managed servers, we also provide proactive monitoring and maintenance. Additionally, all clients have access to our extensive knowledge base and tutorial library."
+      question: "How long does implementation typically take?",
+      answer: "Implementation timelines depend on the complexity of the solution and your organizational requirements. Simple automations might be operational within weeks, while comprehensive enterprise solutions may take several months. We provide detailed timelines during our consultation phase and keep you updated throughout the process."
     },
     {
-      question: "Can I upgrade my server specifications later if needed?",
-      answer: "Yes, you can upgrade your server specifications as your needs evolve. RAM, storage, and bandwidth upgrades can typically be performed without significant downtime. CPU upgrades or major hardware changes may require scheduling a maintenance window. Our flexible infrastructure allows for vertical scaling to accommodate your growing business needs."
+      question: "What ongoing support do you provide after implementation?",
+      answer: "We offer various support packages including regular maintenance, performance monitoring, system updates, user training, and technical support. Our team remains available to address any issues, implement enhancements, and ensure your AI solution continues to deliver value as your business evolves."
     },
     {
-      question: "What is your uptime guarantee and refund policy?",
-      answer: "We guarantee 99.9% network uptime on all our dedicated servers. If we fail to meet this guarantee, you'll receive credits proportional to the downtime experienced. For billing issues, we offer a 14-day money-back guarantee on new server orders if you're not satisfied with our service, excluding domain registration fees and custom setup fees. Detailed terms are available in our Service Level Agreement."
+      question: "How do you handle data security and privacy concerns?",
+      answer: "We prioritize data security at every stage of development. Our solutions comply with relevant regulations like GDPR and industry standards. We implement robust encryption, access controls, and regular security audits. Transparency is key - we clearly communicate how data is used, stored, and protected throughout our engagement."
     }
   ];
 
   return (
-    <section id="faq" className="py-20 px-6 md:px-12 lg:px-24">
+    <section id="faq" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#101C3A] to-[#050A1A]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">FREQUENTLY ASKED QUESTIONS</h2>
-          <p className="text-coolGray max-w-3xl mx-auto text-lg">
-            Get answers to the most common questions about our dedicated server solutions.
+          <p className="text-[#B0B5BF] max-w-3xl mx-auto text-lg">
+            Get answers to common questions about our AI solutions and services.
           </p>
         </div>
 
-        <div className="bg-darkCard rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-gradient-to-b from-[#101C3A] to-[#050A1A] rounded-xl shadow-lg border border-[#4A90E2]/10 overflow-hidden">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}

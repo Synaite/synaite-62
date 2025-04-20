@@ -1,43 +1,51 @@
 
-import { Shield, Settings, ServerCog } from "lucide-react";
+import { Puzzle, Link, TrendingUp, Rocket } from "lucide-react";
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: Shield,
-      title: "DDoS Protection",
-      description: "Advanced protection against distributed denial of service attacks, keeping your servers secure and operational."
+      icon: Puzzle,
+      title: "Custom Solutions",
+      description: "We build AI automations specifically designed for your unique business challenges and processes. No off-the-shelf approaches, only solutions crafted for you."
     },
     {
-      icon: Settings,
-      title: "Control Panel",
-      description: "Intuitive control panel for easy server management, monitoring, and configuration."
+      icon: Link,
+      title: "Seamless System Integration",
+      description: "Integrate powerful AI capabilities smoothly into your existing workflows and software stack for maximum efficiency without disruption."
     },
     {
-      icon: ServerCog,
-      title: "Firewall Settings",
-      description: "Customizable firewall configurations to protect your server while maintaining optimal performance."
+      icon: TrendingUp,
+      title: "Measurable ROI & Insights",
+      description: "Focus on tangible outcomes. Leverage AI for actionable insights and automations designed to demonstrably boost your bottom line."
+    },
+    {
+      icon: Rocket,
+      title: "Scalable & Supported Growth",
+      description: "Build for tomorrow. Our solutions are designed to scale with your business, backed by expert support for sustained success and evolution."
     }
   ];
 
   return (
-    <section id="features" className="py-20 px-6 md:px-12 lg:px-24">
+    <section id="features" className="py-20 px-6 md:px-12 lg:px-24 bg-[#050A1A]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">INCLUDED FEATURES</h2>
-          <p className="text-coolGray max-w-2xl mx-auto text-lg">
-            Every dedicated server includes these essential features to enhance performance and security.
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">WORLD CLASS FEATURES</h2>
+          <p className="text-[#B0B5BF] max-w-2xl mx-auto text-lg">
+            Our AI solutions come with powerful features designed to transform your business operations.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
-            <div key={feature.title} className="bg-darkCard rounded-xl p-8 shadow-lg transition-transform hover:scale-105">
-              <div className="mb-6 inline-flex p-4 rounded-lg bg-violet/10">
-                <feature.icon className="h-8 w-8 text-violet" />
+            <div 
+              key={feature.title} 
+              className="bg-gradient-to-b from-[#101C3A] to-[#050A1A] rounded-xl p-8 shadow-lg border border-[#4A90E2]/20 hover:border-[#4A90E2]/40 transition-all hover:shadow-[#4A90E2]/10 hover:shadow-lg"
+            >
+              <div className="mb-6 inline-flex p-4 rounded-lg bg-[#007BFF]/10">
+                <feature.icon className="h-8 w-8 text-[#007BFF]" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-coolGray">{feature.description}</p>
+              <p className="text-[#B0B5BF]">{feature.description}</p>
             </div>
           ))}
         </div>
