@@ -15,9 +15,7 @@ Feel free to reach out, and let’s talk about how AI can take your business to 
               <Mail className="h-8 w-8 text-[#007BFF]" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Email Us</h3>
-            <a href="mailto:contact@fusentra.com" className="text-[#B0B5BF] hover:text-[#007BFF] transition-colors">
-              contact@fusentra.com
-            </a>
+            <a href="mailto:contact@fusentra.com" className="text-[#B0B5BF] hover:text-[#007BFF] transition-colors">tom@fusentra.com</a>
           </div>
 
           {/* Phone */}
@@ -26,9 +24,7 @@ Feel free to reach out, and let’s talk about how AI can take your business to 
               <Phone className="h-8 w-8 text-[#007BFF]" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
-            <a href="tel:+1234567890" className="text-[#B0B5BF] hover:text-[#007BFF] transition-colors">
-              +1 (234) 567-890
-            </a>
+            <a href="tel:+1234567890" className="text-[#B0B5BF] hover:text-[#007BFF] transition-colors">07985152844</a>
           </div>
 
           {/* LinkedIn */}
