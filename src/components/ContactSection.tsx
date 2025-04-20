@@ -1,6 +1,6 @@
 import { Mail, Phone, Linkedin } from "lucide-react";
 const ContactSection = () => {
-  return <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050A1A]">
+  return <section className="py-20 px-6 md:px-12 lg:px-24 bg-slate-950">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">CONNECT WITH US</h2>
