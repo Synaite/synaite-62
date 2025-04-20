@@ -8,21 +8,16 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#B0B5BF] text-lg mb-6 leading-relaxed mx-0 my-0 px-0">Fusentra, now evolving into a consultancy dedicated to crafting bespoke AI solutions that drive efficiency and cost savings across various industries. In this era of rapid technological advancement, businesses that fail to integrate AI risk falling behind.</p>
+            <p className="text-[#B0B5BF] text-lg mb-6 leading-relaxed mx-0 my-0 px-0 font-medium">Fusentra, is a consultancy dedicated to crafting bespoke AI solutions that drive efficiency and cost savings across various industries. In this era of rapid technological advancement, businesses that fail to integrate AI risk falling behind.</p>
             
-            <h3 className="text-2xl font-semibold text-white mb-4">💡 What We're Building:</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">What We're Building:</h3>
             <ul className="list-disc list-inside text-[#B0B5BF] space-y-2 mb-6">
               <li>Tailored AI assistants that automate routine tasks, from customer inquiries to data analysis.</li>
               <li>Integration of AI tools with existing business systems to streamline operations.</li>
               <li>End-to-end AI solutions designed to enhance decision-making and operational efficiency.</li>
             </ul>
             
-            <p className="text-[#B0B5BF] text-lg mb-6 leading-relaxed">
-              The AI revolution is not just a trend; it's a fundamental shift in how businesses operate. Companies
-              that embrace AI are seeing significant improvements in productivity and competitiveness. For instance,
-              a recent McKinsey survey found that 78% of organizations have adopted AI in at least one business function,
-              up from 72% in early 2024 and 55% a year earlier.
-            </p>
+            <p className="text-lg mb-6 leading-relaxed font-semibold text-neutral-200">The AI revolution is not just a trend; it's a fundamental shift in how businesses operate. </p>
             
             
             
