@@ -29,12 +29,7 @@ const FeaturesSection = () => {
     <section id="features" className="py-20 px-6 md:px-12 lg:px-24 bg-[#050A1A]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="relative">
-            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-[#4A90E2] to-[#007BFF] opacity-75 blur-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-            <h2 className="relative text-3xl md:text-4xl font-bold text-white mb-4">
-              WORLD CLASS FEATURES
-            </h2>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">WORLD CLASS FEATURES</h2>
           <p className="text-[#B0B5BF] max-w-2xl mx-auto text-lg">
             Our AI solutions come with powerful features designed to transform your business operations.
           </p>
