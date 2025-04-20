@@ -10,9 +10,9 @@ interface FAQItemProps {
 
 const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
   return (
-    <div className="border-b border-[#4A90E2]/20 last:border-0">
+    <div className="border-b border-[#4A90E2]/40 last:border-0 bg-[#101C3A]/50 hover:bg-[#101C3A]/70 transition-colors duration-300 rounded-lg overflow-hidden">
       <button
-        className="flex justify-between items-center w-full py-6 text-left"
+        className="flex justify-between items-center w-full py-6 px-6 text-left"
         onClick={onClick}
       >
         <h3 className="text-lg font-semibold text-white">{question}</h3>
@@ -29,7 +29,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
         </span>
       </button>
       {isOpen && (
-        <div className="pb-6">
+        <div className="pb-6 px-6">
           <p className="text-[#B0B5BF]">{answer}</p>
         </div>
       )}
