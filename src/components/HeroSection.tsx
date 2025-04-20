@@ -31,7 +31,7 @@ const HeroSection = () => {
         
         <div className="relative w-full max-w-4xl mx-auto">
           <img 
-            src="https://images.unsplash.com/photo-1560732488-7b5f5b8c8ba6?auto=format&fit=crop&q=80&w=1024" 
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1024" 
             alt="Data center servers" 
             className="w-full h-auto rounded-xl shadow-lg"
           />
