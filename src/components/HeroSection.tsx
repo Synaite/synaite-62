@@ -1,4 +1,3 @@
-
 import { GradientButton } from "./ui/gradient-button";
 const HeroSection = () => {
   return <section className="pt-32 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden">
@@ -13,7 +12,7 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl leading-none tracking-tighter mb-2 font-semibold text-zinc-500">
+        <h1 className="text-4xl md:text-5xl leading-none tracking-tighter mb-2 font-semibold text-zinc-500 lg:text-4xl">
           Welcome to Fusentra
         </h1>
         
