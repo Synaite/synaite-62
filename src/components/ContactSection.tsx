@@ -4,7 +4,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">CONNECT WITH US</h2>
-          <p className="text-[#B0B5BF] max-w-2xl text-lg mx-0 text-center">We’re passionate about exploring how AI can transform the way businesses operate. Whether you're an investor, a fellow founder, or just curious about the future of work — we’d love to connect.
+          <p className="text-[#B0B5BF] max-w-2xl text-lg text-center mx-[240px]">We’re passionate about exploring how AI can transform the way businesses operate. Whether you're an investor, a fellow founder, or just curious about the future of work — we’d love to connect.
 Feel free to reach out, and let’s talk about how AI can take your business to the next level. 🚀</p>
         </div>
 
