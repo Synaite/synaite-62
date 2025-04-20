@@ -8,7 +8,7 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#B0B5BF] text-lg mb-6 leading-relaxed">Fusentra, now evolving into a consultancy dedicated to crafting bespoke AI solutions that drive efficiency and cost savings across various industries. In this era of rapid technological advancement, businesses that fail to integrate AI risk falling behind.</p>
+            <p className="text-[#B0B5BF] text-lg mb-6 leading-relaxed mx-0 my-0 px-0">Fusentra, now evolving into a consultancy dedicated to crafting bespoke AI solutions that drive efficiency and cost savings across various industries. In this era of rapid technological advancement, businesses that fail to integrate AI risk falling behind.</p>
             
             <h3 className="text-2xl font-semibold text-white mb-4">💡 What We're Building:</h3>
             <ul className="list-disc list-inside text-[#B0B5BF] space-y-2 mb-6">
@@ -24,16 +24,10 @@ const AboutSection = () => {
               up from 72% in early 2024 and 55% a year earlier.
             </p>
             
-            <h3 className="text-2xl font-semibold text-white mb-4">👥 Let's Connect:</h3>
-            <p className="text-[#B0B5BF] text-lg mb-8 leading-relaxed">
-              I'm passionate about discussing how AI can transform business operations. Whether you're an investor,
-              a fellow founder, or someone interested in the future of work, I'd love to hear your thoughts and
-              explore potential collaborations.
-            </p>
             
-            <p className="text-[#B0B5BF] text-lg mb-8 leading-relaxed">
-              Feel free to reach out, and let's explore how AI can propel your business forward. 🚀
-            </p>
+            
+            
+            
           </div>
           
           <div className="relative">

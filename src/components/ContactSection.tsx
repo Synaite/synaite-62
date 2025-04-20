@@ -1,15 +1,11 @@
-
 import { Mail, Phone, Linkedin } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050A1A]">
+  return <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#050A1A]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">CONNECT WITH US</h2>
-          <p className="text-[#B0B5BF] max-w-2xl mx-auto text-lg">
-            Let's discuss how our AI solutions can transform your business operations.
-          </p>
+          <p className="text-[#B0B5BF] max-w-2xl text-lg text-center mx-[212px]">We’re passionate about exploring how AI can transform the way businesses operate. Whether you're an investor, a fellow founder, or just curious about the future of work — we’d love to connect.
+Feel free to reach out, and let’s talk about how AI can take your business to the next level. 🚀</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -41,19 +37,12 @@ const ContactSection = () => {
               <Linkedin className="h-8 w-8 text-[#007BFF]" />
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Connect on LinkedIn</h3>
-            <a 
-              href="https://linkedin.com/company/fusentra" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-[#B0B5BF] hover:text-[#007BFF] transition-colors"
-            >
+            <a href="https://linkedin.com/company/fusentra" target="_blank" rel="noopener noreferrer" className="text-[#B0B5BF] hover:text-[#007BFF] transition-colors">
               linkedin.com/company/fusentra
             </a>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
