@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
 
@@ -5,17 +6,42 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="py-4 md:py-6 px-6 md:px-12 lg:px-24 w-full fixed top-0 z-50 bg-gradient-to-b from-[#101C3A] to-[#050A1A] backdrop-blur-md">
+    <nav className="py-4 md:py-6 px-6 md:px-12 lg:px-24 w-full fixed top-0 z-50 
+      bg-gradient-to-b from-[#101C3A] to-[#050A1A] 
+      backdrop-blur-md 
+      border-b border-white/10 
+      shadow-lg 
+      shadow-[#101C3A]/30">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-white">Fusentra</h1>
+          <h1 className="text-2xl font-bold text-white 
+            bg-clip-text 
+            text-transparent 
+            bg-gradient-to-r 
+            from-white 
+            to-white/70 
+            hover:from-violet 
+            hover:to-violet/70 
+            transition-colors 
+            duration-300">
+            Fusentra
+          </h1>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <a href="#about" className="text-white hover:text-violet transition-colors">About Us</a>
-          <a href="#faq" className="text-white hover:text-violet transition-colors">FAQ</a>
-          <a href="#contact" className="text-white hover:text-violet transition-colors">Contact</a>
+          <a href="#about" className="text-white hover:text-violet transition-colors group relative">
+            About Us
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#faq" className="text-white hover:text-violet transition-colors group relative">
+            FAQ
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#contact" className="text-white hover:text-violet transition-colors group relative">
+            Contact
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet transition-all duration-300 group-hover:w-full"></span>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
