@@ -48,7 +48,7 @@ const FAQSection = () => {
     question: "How do you handle data security and privacy concerns?",
     answer: "We prioritize data security at every stage of development. Our solutions comply with relevant regulations like GDPR and industry standards. We implement robust encryption, access controls, and regular security audits. Transparency is key - we clearly communicate how data is used, stored, and protected throughout our engagement."
   }];
-  return <section id="faq" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#101C3A] to-[#1A2435]">
+  return <section id="faq" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#101C3A] to-[#080F1A]\n">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">FREQUENTLY ASKED QUESTIONS</h2>
