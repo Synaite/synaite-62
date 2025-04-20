@@ -1,6 +1,10 @@
+
 import { GradientButton } from "./ui/gradient-button";
+import { Sparkles } from "./ui/sparkles";
+
 const HeroSection = () => {
-  return <section className="pt-32 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+  return (
+    <section className="pt-32 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Background Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#050A1A] to-[#101C3A]" />
       
@@ -16,7 +20,11 @@ const HeroSection = () => {
           Welcome to Fusentra
         </h1>
         
-        <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-white md:text-6xl">Bespoke AI Solutions That Automate Operations & Maximize Profit</p>
+        <Sparkles className="block">
+          <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-white md:text-6xl">
+            Bespoke AI Solutions That Automate Operations & Maximize Profit
+          </p>
+        </Sparkles>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 mt-8">
           <GradientButton size="lg" className="bg-gradient-to-r from-[#007BFF] to-[#3395FF] hover:brightness-110">
@@ -25,9 +33,10 @@ const HeroSection = () => {
         </div>
         
         <div className="relative w-full max-w-4xl mx-auto">
-          
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
