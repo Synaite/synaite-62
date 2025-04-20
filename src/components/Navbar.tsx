@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold relative">
-            <span className="bg-gradient-to-r from-white via-blue-400 to-violet bg-clip-text text-transparent font-extrabold">
+            <span className="bg-gradient-to-r from-blue-400 to-violet bg-clip-text text-transparent font-extrabold">
               Fusentra
             </span>
           </h1>
