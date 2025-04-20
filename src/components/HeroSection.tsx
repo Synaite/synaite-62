@@ -16,9 +16,7 @@ const HeroSection = () => {
           Welcome to Fusentra
         </h1>
         
-        <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-white md:text-6xl">
-          Bespoke AI solutions That Automate Work & Cut Costs Instantly
-        </p>
+        <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-white md:text-6xl">Bespoke AI Solutions That Automate Operations & Maximize Profit</p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 mt-8">
           <GradientButton size="lg" className="bg-gradient-to-r from-[#007BFF] to-[#3395FF] hover:brightness-110">
