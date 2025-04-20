@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
 
@@ -6,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="py-4 md:py-6 px-6 md:px-12 lg:px-24 w-full fixed top-0 z-50 bg-dark/90 backdrop-blur-md">
+    <nav className="py-4 md:py-6 px-6 md:px-12 lg:px-24 w-full fixed top-0 z-50 bg-gradient-to-b from-[#101C3A] to-[#050A1A] backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-white">Fusentra</h1>
@@ -48,4 +47,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
