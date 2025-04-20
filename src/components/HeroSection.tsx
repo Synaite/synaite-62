@@ -1,3 +1,4 @@
+
 import { GradientButton } from "./ui/gradient-button";
 const HeroSection = () => {
   return <section className="pt-32 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden">
@@ -12,13 +13,15 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tighter mb-6 font-semibold text-zinc-500">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl leading-none tracking-tighter mb-2 font-semibold text-zinc-500">
           Welcome to Fusentra
         </h1>
         
-        <p className="text-lg max-w-3xl mx-auto mb-8 leading-relaxed font-bold text-white md:text-6xl">Bespoke AI solutions That Automate Work & Cut Costs Instantly</p>
+        <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-white md:text-6xl">
+          Bespoke AI solutions That Automate Work & Cut Costs Instantly
+        </p>
         
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 mt-8">
           <GradientButton size="lg" className="bg-gradient-to-r from-[#007BFF] to-[#3395FF] hover:brightness-110">
             Book A Call
           </GradientButton>
