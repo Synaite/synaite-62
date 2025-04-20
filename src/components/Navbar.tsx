@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
+import Image from 'next/image'; // Note: You might need to add Next.js or adjust for Vite
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,22 +9,22 @@ const Navbar = () => {
   return (
     <nav className="py-4 md:py-6 px-6 md:px-12 lg:px-24 w-full fixed top-0 z-50 bg-dark/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Logo - Replace with actual Fusentra logo when provided */}
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-white">Serenity<span className="text-violet">Servers</span></h1>
+          <Image 
+            src="/placeholder-logo.png" 
+            alt="Fusentra Logo" 
+            width={150} 
+            height={50} 
+            className="h-10 w-auto"
+          />
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <a href="#features" className="text-white hover:text-violet transition-colors">Features</a>
-          <a href="#pricing" className="text-white hover:text-violet transition-colors">Pricing</a>
-          <a href="#testimonials" className="text-white hover:text-violet transition-colors">Testimonials</a>
+          <a href="#about" className="text-white hover:text-violet transition-colors">About Us</a>
           <a href="#faq" className="text-white hover:text-violet transition-colors">FAQ</a>
-          <a href="#blog" className="text-white hover:text-violet transition-colors">Blog</a>
-        </div>
-
-        <div className="hidden md:flex space-x-4">
-          <GradientButton variant="outline">Log In</GradientButton>
-          <GradientButton>Sign Up</GradientButton>
+          <a href="#contact" className="text-white hover:text-violet transition-colors">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -44,15 +45,9 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden pt-4 pb-2">
           <div className="flex flex-col space-y-4 px-4">
-            <a href="#features" className="text-white hover:text-violet transition-colors py-2">Features</a>
-            <a href="#pricing" className="text-white hover:text-violet transition-colors py-2">Pricing</a>
-            <a href="#testimonials" className="text-white hover:text-violet transition-colors py-2">Testimonials</a>
+            <a href="#about" className="text-white hover:text-violet transition-colors py-2">About Us</a>
             <a href="#faq" className="text-white hover:text-violet transition-colors py-2">FAQ</a>
-            <a href="#blog" className="text-white hover:text-violet transition-colors py-2">Blog</a>
-            <div className="flex flex-col space-y-2 pt-2">
-              <GradientButton variant="outline">Log In</GradientButton>
-              <GradientButton>Sign Up</GradientButton>
-            </div>
+            <a href="#contact" className="text-white hover:text-violet transition-colors py-2">Contact</a>
           </div>
         </div>
       )}
