@@ -77,7 +77,7 @@ const FAQSection = () => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-b from-[#101C3A] to-[#050A1A] rounded-xl shadow-lg border border-[#4A90E2]/10 overflow-hidden">
+        <div className="bg-gradient-to-b from-[#101C3A] to-[#050A1A] rounded-xl shadow-lg border-2 border-[#4A90E2]/30 overflow-hidden">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}
