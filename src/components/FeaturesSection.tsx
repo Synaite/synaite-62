@@ -1,3 +1,4 @@
+
 import { Puzzle, Link, TrendingUp, Rocket } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
@@ -26,7 +27,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 px-6 md:px-12 lg:px-24 bg-card transition-colors duration-300">
+    <section id="features" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FDFF] via-[#E5F1FF] to-[#d7e7f8] dark:from-card dark:to-background transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">WORLD CLASS FEATURES</h2>
@@ -38,7 +39,7 @@ const FeaturesSection = () => {
           {features.map((feature) => (
             <div 
               key={feature.title} 
-              className="relative bg-gradient-to-b from-card to-background rounded-xl p-8 shadow-lg border border-primary/20 hover:border-primary/40 transition-all hover:shadow-primary/10 hover:shadow-lg"
+              className="relative bg-white/80 dark:bg-gradient-to-b dark:from-card dark:to-background rounded-xl p-8 shadow-lg border border-primary/20 hover:border-primary/40 transition-all hover:shadow-primary/10 hover:shadow-lg"
             >
               <GlowingEffect
                 spread={40}

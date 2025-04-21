@@ -1,3 +1,4 @@
+
 import { GradientButton } from "./ui/gradient-button";
 const HeroSection = () => {
   return <section className="pt-32 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden transition-colors duration-300 bg-background">
@@ -10,8 +11,8 @@ const HeroSection = () => {
       </div>
       {/* Content */}
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h1 className="text-4xl md:text-5xl leading-none tracking-tighter mb-2 font-semibold text-muted-foreground lg:text-4xl">
-          Welcome to Fusentra
+        <h1 className="text-5xl md:text-7xl leading-tight tracking-tighter mb-3 font-extrabold bg-gradient-to-r from-[#1EAEDB] via-blue-500 to-blue-700 text-transparent bg-clip-text drop-shadow-xl animate-fade-in">
+          Fusentra
         </h1>
         <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-foreground md:text-6xl">Bespoke AI Solutions That Automate Operations & Maximize Profit</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 mt-8">
