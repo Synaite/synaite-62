@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -7,10 +6,9 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingBookButton from "@/components/FloatingBookButton";
-
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#050A1A] text-white">
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Navbar />
       <main>
         <HeroSection />
@@ -24,5 +22,4 @@ const Index = () => {
     </div>
   );
 };
-
 export default Index;
