@@ -1,27 +1,25 @@
-
 import { GradientButton } from "./ui/gradient-button";
+import { AuroraBackground } from "./ui/aurora-background";
+
 const HeroSection = () => {
-  return <section className="pt-32 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden transition-colors duration-300 bg-background">
-      {/* Background Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-card" />
-      {/* Floating tech elements in background */}
-      <div className="absolute inset-0 opacity-10 overflow-hidden">
-        <div className="absolute top-[10%] right-[20%] w-64 h-64 rounded-full bg-primary blur-3xl" />
-        <div className="absolute bottom-[10%] left-[20%] w-80 h-80 rounded-full bg-accent blur-3xl" />
-      </div>
-      {/* Content */}
-      <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h1 className="text-5xl md:text-7xl leading-tight tracking-tighter mb-3 font-extrabold bg-gradient-to-r from-[#1EAEDB] via-blue-500 to-blue-700 text-transparent bg-clip-text drop-shadow-xl animate-fade-in">
-          Fusentra
-        </h1>
-        <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-foreground md:text-6xl">Bespoke AI Solutions That Automate Operations & Maximize Profit</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 mt-8">
-          <GradientButton size="lg" className="bg-gradient-to-r from-primary to-accent hover:brightness-110">
-            Book A Call
-          </GradientButton>
+  return (
+    <section className="pt-32 pb-16 px-0 md:px-0 lg:px-0 relative overflow-hidden transition-colors duration-300 bg-transparent">
+      <AuroraBackground className="h-full min-h-[80vh] w-full">
+        {/* Content */}
+        <div className="max-w-7xl mx-auto text-center relative z-10 px-6 md:px-12 lg:px-24">
+          <h1 className="text-5xl md:text-7xl leading-tight tracking-tighter mb-3 font-extrabold bg-gradient-to-r from-[#1EAEDB] via-blue-500 to-blue-700 text-transparent bg-clip-text drop-shadow-xl animate-fade-in">
+            Fusentra
+          </h1>
+          <p className="text-lg max-w-3xl mx-auto leading-relaxed font-bold text-foreground md:text-6xl">Bespoke AI Solutions That Automate Operations & Maximize Profit</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 mt-8">
+            <GradientButton size="lg" className="bg-gradient-to-r from-primary to-accent hover:brightness-110">
+              Book A Call
+            </GradientButton>
+          </div>
+          <div className="relative w-full max-w-4xl mx-auto"></div>
         </div>
-        <div className="relative w-full max-w-4xl mx-auto"></div>
-      </div>
-    </section>;
+      </AuroraBackground>
+    </section>
+  );
 };
 export default HeroSection;
