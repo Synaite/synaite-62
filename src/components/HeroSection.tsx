@@ -1,6 +1,7 @@
 
 import { GradientButton } from "./ui/gradient-button";
 import { AuroraBackground } from "./ui/aurora-background";
+import CalendlyDialog from "./CalendlyDialog";
 
 const HeroSection = () => {
   return (
@@ -12,9 +13,11 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-foreground max-w-5xl leading-tight mb-6">
           Bespoke AI Solutions That Automate Operations & Maximize Profit
         </h1>
-        <GradientButton size="lg" className="rounded-full px-8 py-6 text-lg font-medium">
-          Book A Call
-        </GradientButton>
+        <CalendlyDialog>
+          <GradientButton size="lg" className="rounded-full px-8 py-6 text-lg font-medium">
+            Book A Call
+          </GradientButton>
+        </CalendlyDialog>
       </section>
     </AuroraBackground>
   );

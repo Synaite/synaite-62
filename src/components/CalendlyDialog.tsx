@@ -1,4 +1,3 @@
-
 import {
   Dialog,
   DialogContent,
@@ -16,7 +15,7 @@ const CalendlyDialog = ({ children }: CalendlyDialogProps) => {
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="max-w-4xl h-[80vh] p-0">
         <iframe
-          src="https://calendly.com/tom-fusentra/30min"
+          src="https://calendly.com/tom-synaite/30min"
           style={{ width: "100%", height: "100%" }}
           frameBorder="0"
         ></iframe>
@@ -26,4 +25,3 @@ const CalendlyDialog = ({ children }: CalendlyDialogProps) => {
 };
 
 export default CalendlyDialog;
-
