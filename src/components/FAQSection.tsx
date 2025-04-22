@@ -7,31 +7,34 @@ interface FAQItemProps {
   onClick: () => void;
 }
 
-const FAQItem = ({
-  question,
-  answer,
-  isOpen,
-  onClick
-}: FAQItemProps) => {
-  return <div className="border-b border-[#4A90E2]/40 last:border-0 bg-white/80 dark:bg-[#101C3A]/50 hover:bg-[#E1F1FA] dark:hover:bg-[#131a2b] transition-colors duration-300 rounded-lg overflow-hidden">
+const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
+  return (
+    <div className="border-b border-[#4A90E2]/40 last:border-0 bg-white/80 dark:bg-[#101C3A]/50 hover:bg-[#E1F1FA] dark:hover:bg-[#131a2b] transition-colors duration-300 rounded-lg overflow-hidden">
       <button className="flex justify-between items-center w-full py-6 px-6 text-left" onClick={onClick}>
         <h3 className="text-lg font-semibold text-[#21223f] dark:text-white">{question}</h3>
         <span className="ml-6 flex-shrink-0 text-[#4A90E2]">
-          {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          {isOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
-            </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>}
+            </svg>
+          )}
         </span>
       </button>
-      {isOpen && <div className="pb-6 px-6">
+      {isOpen && (
+        <div className="pb-6 px-6">
           <p className="text-[#2e4154] dark:text-[#B0B5BF]">{answer}</p>
-        </div>}
-    </div>;
+        </div>
+      )}
+    </div>
+  );
 };
 
 const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
   const faqs = [
     {
       question: "What types of AI solutions do you offer?",
