@@ -6,7 +6,7 @@ const ContactSection = () => {
     navigator.clipboard.writeText(text);
   };
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FBFF] to-[#EEF5FF] dark:from-card dark:to-background transition-colors duration-300">
+    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#D6E8FF] to-[#F6FBFF] transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">CONNECT WITH US</h2>

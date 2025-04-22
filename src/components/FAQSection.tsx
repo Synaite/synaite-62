@@ -1,10 +1,12 @@
 import { useState } from "react";
+
 interface FAQItemProps {
   question: string;
   answer: string;
   isOpen: boolean;
   onClick: () => void;
 }
+
 const FAQItem = ({
   question,
   answer,
@@ -27,28 +29,38 @@ const FAQItem = ({
         </div>}
     </div>;
 };
+
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(0);
-  const faqs = [{
-    question: "What types of AI solutions do you offer?",
-    answer: "We specialize in creating customized AI solutions that include automated customer service bots, data analysis tools, process automation, predictive analytics, and integration with existing business systems. Our solutions are tailored to address your specific business challenges."
-  }, {
-    question: "How do you ensure AI solutions integrate with our existing systems?",
-    answer: "Our team conducts thorough assessments of your current infrastructure and workflows. We design solutions with compatibility in mind, utilizing APIs, middleware, and custom connectors when necessary. Throughout implementation, we work closely with your IT team to ensure smooth integration with minimal disruption."
-  }, {
-    question: "What ROI can we expect from implementing your AI solutions?",
-    answer: "ROI varies based on the specific solution and industry, but our clients typically see significant benefits in operational efficiency, cost reduction, and revenue opportunities. We establish clear metrics at the project outset and provide regular reports to track performance against these benchmarks."
-  }, {
-    question: "How long does implementation typically take?",
-    answer: "Implementation timelines depend on the complexity of the solution and your organizational requirements. Simple automations might be operational within weeks, while comprehensive enterprise solutions may take several months. We provide detailed timelines during our consultation phase and keep you updated throughout the process."
-  }, {
-    question: "What ongoing support do you provide after implementation?",
-    answer: "We offer various support packages including regular maintenance, performance monitoring, system updates, user training, and technical support. Our team remains available to address any issues, implement enhancements, and ensure your AI solution continues to deliver value as your business evolves."
-  }, {
-    question: "How do you handle data security and privacy concerns?",
-    answer: "We prioritize data security at every stage of development. Our solutions comply with relevant regulations like GDPR and industry standards. We implement robust encryption, access controls, and regular security audits. Transparency is key - we clearly communicate how data is used, stored, and protected throughout our engagement."
-  }];
-  return <section id="faq" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#EEF8FE] to-[#F5FBFF] dark:from-[#101C3A] dark:to-[#080F1A] transition-colors duration-300">
+  const faqs = [
+    {
+      question: "What types of AI solutions do you offer?",
+      answer: "We specialize in creating customized AI solutions that include automated customer service bots, data analysis tools, process automation, predictive analytics, and integration with existing business systems. Our solutions are tailored to address your specific business challenges."
+    },
+    {
+      question: "How do you ensure AI solutions integrate with our existing systems?",
+      answer: "Our team conducts thorough assessments of your current infrastructure and workflows. We design solutions with compatibility in mind, utilizing APIs, middleware, and custom connectors when necessary. Throughout implementation, we work closely with your IT team to ensure smooth integration with minimal disruption."
+    },
+    {
+      question: "What ROI can we expect from implementing your AI solutions?",
+      answer: "ROI varies based on the specific solution and industry, but our clients typically see significant benefits in operational efficiency, cost reduction, and revenue opportunities. We establish clear metrics at the project outset and provide regular reports to track performance against these benchmarks."
+    },
+    {
+      question: "How long does implementation typically take?",
+      answer: "Implementation timelines depend on the complexity of the solution and your organizational requirements. Simple automations might be operational within weeks, while comprehensive enterprise solutions may take several months. We provide detailed timelines during our consultation phase and keep you updated throughout the process."
+    },
+    {
+      question: "What ongoing support do you provide after implementation?",
+      answer: "We offer various support packages including regular maintenance, performance monitoring, system updates, user training, and technical support. Our team remains available to address any issues, implement enhancements, and ensure your AI solution continues to deliver value as your business evolves."
+    },
+    {
+      question: "How do you handle data security and privacy concerns?",
+      answer: "We prioritize data security at every stage of development. Our solutions comply with relevant regulations like GDPR and industry standards. We implement robust encryption, access controls, and regular security audits. Transparency is key - we clearly communicate how data is used, stored, and protected throughout our engagement."
+    }
+  ];
+
+  return (
+    <section id="faq" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FBFF] via-[#EEF5FF] to-[#D6E8FF] transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#214478] dark:text-white mb-4">FREQUENTLY ASKED QUESTIONS</h2>
@@ -61,6 +73,8 @@ const FAQSection = () => {
           {faqs.map((faq, index) => <FAQItem key={index} question={faq.question} answer={faq.answer} isOpen={index === openIndex} onClick={() => setOpenIndex(index === openIndex ? -1 : index)} />)}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default FAQSection;
