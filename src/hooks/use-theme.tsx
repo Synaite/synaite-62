@@ -1,29 +1,19 @@
 
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect } from "react";
 
-export type Theme = "light" | "dark";
+export type Theme = "light";
 
 export function useTheme(): [Theme, (theme: Theme) => void] {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("theme");
-      if (stored === "light" || stored === "dark") return stored;
-      // OS preference fallback
-      return window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
-    }
-    return "dark";
-  });
+  const theme: Theme = "light";
 
   useLayoutEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }, []);
+
+  const setTheme = () => {
+    // No-op function to maintain type signature
+  };
 
   return [theme, setTheme];
 }

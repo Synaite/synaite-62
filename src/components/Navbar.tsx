@@ -1,8 +1,9 @@
+
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
 import { CalendarDays } from "lucide-react";
 import CalendlyDialog from "./CalendlyDialog";
-import ThemeToggle from "./ThemeToggle";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return <nav className="py-4 px-6 md:px-12 lg:px-24 w-full z-50 bg-gradient-to-r from-background to-background/80 backdrop-blur-md border-b border-border shadow-lg shadow-indigo-500/20 transition-colors duration-300">
@@ -30,9 +31,6 @@ const Navbar = () => {
               Book a Call
             </GradientButton>
           </CalendlyDialog>
-          <div className="ml-4">
-            <ThemeToggle />
-          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -56,9 +54,6 @@ const Navbar = () => {
                 Book a Call
               </GradientButton>
             </CalendlyDialog>
-            <div>
-              <ThemeToggle />
-            </div>
           </div>
         </div>}
     </nav>;
