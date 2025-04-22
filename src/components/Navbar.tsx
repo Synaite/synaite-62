@@ -1,21 +1,14 @@
-
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
 import { CalendarDays } from "lucide-react";
 import CalendlyDialog from "./CalendlyDialog";
 import ThemeToggle from "./ThemeToggle";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  return (
-    <nav className="py-4 px-6 md:px-12 lg:px-24 w-full z-50 bg-gradient-to-r from-background to-background/80 backdrop-blur-md border-b border-border shadow-lg shadow-indigo-500/20 transition-colors duration-300">
+  return <nav className="py-4 px-6 md:px-12 lg:px-24 w-full z-50 bg-gradient-to-r from-background to-background/80 backdrop-blur-md border-b border-border shadow-lg shadow-indigo-500/20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/f007d2c6-856b-4b52-9436-b79517bb105c.png" 
-            alt="Synaite Logo" 
-            className="h-8 object-contain"  // Adjust height and make sure logo maintains its aspect ratio
-          />
+          <img src="/lovable-uploads/f007d2c6-856b-4b52-9436-b79517bb105c.png" alt="Synaite Logo" className="h-11 object-contain" />
         </div>
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -52,8 +45,7 @@ const Navbar = () => {
         </button>
       </div>
       {/* Mobile Menu */}
-      {isMenuOpen && 
-        <div className="md:hidden pt-4 pb-2">
+      {isMenuOpen && <div className="md:hidden pt-4 pb-2">
           <div className="flex flex-col space-y-4 px-4">
             <a href="#about" className="text-foreground hover:text-violet transition-colors py-2">About Us</a>
             <a href="#faq" className="text-foreground hover:text-violet transition-colors py-2">FAQ</a>
@@ -68,10 +60,7 @@ const Navbar = () => {
               <ThemeToggle />
             </div>
           </div>
-        </div>
-      }
-    </nav>
-  );
+        </div>}
+    </nav>;
 };
-
 export default Navbar;
