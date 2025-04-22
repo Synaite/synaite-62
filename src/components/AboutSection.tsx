@@ -1,6 +1,6 @@
 import { GradientButton } from "./ui/gradient-button";
 const AboutSection = () => {
-  return <section className="px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FBFF] to-[#D6EFFF] dark:from-background dark:to-card transition-colors duration-300 py-[60px]">
+  return <section className="px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#C4DDFF] to-[#F6FBFF] transition-colors duration-300 py-[60px]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">ABOUT US</h2>

@@ -1,4 +1,3 @@
-
 import { GradientButton } from "./ui/gradient-button";
 
 const BlogSection = () => {
@@ -27,7 +26,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <section id="blog" className="py-20 px-6 md:px-12 lg:px-24">
+    <section id="blog" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FBFF] via-[#EEF5FF] to-[#D6E8FF]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>

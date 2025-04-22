@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { GradientButton } from "./ui/gradient-button";
 
@@ -64,7 +63,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-dark to-dark/90">
+    <section id="pricing" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FBFF] via-[#EEF5FF] to-[#D6E8FF]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">TRANSPARENT PRICING PLANS</h2>

@@ -1,9 +1,8 @@
-
 import { GradientButton } from "./ui/gradient-button";
 
 const HardwareSection = () => {
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-dark/90 to-dark">
+    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#D6E8FF] to-[#F6FBFF]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>

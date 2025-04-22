@@ -1,7 +1,8 @@
+
 import { GradientButton } from "./ui/gradient-button";
 import { AuroraBackground } from "./ui/aurora-background";
 const HeroSection = () => {
-  return <section className="pt-32 pb-16 px-0 md:px-0 lg:px-0 relative overflow-hidden transition-colors duration-300 bg-transparent py-0">
+  return <section className="pt-32 pb-16 px-0 md:px-0 lg:px-0 relative overflow-hidden transition-colors duration-300 bg-gradient-to-b from-[#EEF5FF] via-[#D6E8FF] to-[#C4DDFF]">
       <AuroraBackground className="h-full min-h-[80vh] w-full">
         {/* Content */}
         <div className="max-w-7xl mx-auto text-center relative z-10 px-6 md:px-12 lg:px-24">
