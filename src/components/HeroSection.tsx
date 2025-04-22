@@ -1,10 +1,9 @@
-
 import { GradientButton } from "./ui/gradient-button";
 import { AuroraBackground } from "./ui/aurora-background";
 
 const HeroSection = () => {
   return (
-    <AuroraBackground className="py-2 my-0 bg-gradient-to-br from-violet/30 via-indigo/20 to-violet/10">
+    <AuroraBackground className="py-2 my-0 bg-gradient-to-b from-white via-[#F6FBFF] to-[#EEF5FF]">
       <section className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4 max-w-7xl mx-auto py-8">
         <h2 className="text-4xl md:text-5xl font-medium text-primary mb-2">
           Welcome to Synaite

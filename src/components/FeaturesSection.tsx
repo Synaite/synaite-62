@@ -26,7 +26,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#F6FBFF] via-[#EEF5FF] to-[#D6E8FF] transition-colors duration-300">
+    <section id="features" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#D6E8FF] via-[#EEF5FF] to-[#F6FBFF] transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">WORLD CLASS FEATURES</h2>
@@ -62,4 +62,5 @@ const FeaturesSection = () => {
     </section>
   );
 };
+
 export default FeaturesSection;
