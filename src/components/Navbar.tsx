@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { GradientButton } from "./ui/gradient-button";
 import { CalendarDays } from "lucide-react";
@@ -10,11 +11,11 @@ const Navbar = () => {
     <nav className="py-4 px-6 md:px-12 lg:px-24 w-full z-50 bg-gradient-to-r from-background to-background/80 backdrop-blur-md border-b border-border shadow-lg shadow-indigo-500/20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold relative">
-            <span className="bg-gradient-to-r from-blue-400 to-violet bg-clip-text text-transparent font-extrabold text-2xl">
-              Fusentra
-            </span>
-          </h1>
+          <img 
+            src="/lovable-uploads/f007d2c6-856b-4b52-9436-b79517bb105c.png" 
+            alt="Synaite Logo" 
+            className="h-8 object-contain"  // Adjust height and make sure logo maintains its aspect ratio
+          />
         </div>
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
