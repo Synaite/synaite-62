@@ -1,3 +1,4 @@
+
 import { GradientButton } from "./ui/gradient-button";
 const AboutSection = () => {
   return <section className="px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#EEF5FF] to-[#D6E8FF] transition-colors duration-300 py-[60px]">
@@ -14,7 +15,7 @@ const AboutSection = () => {
               <li>Integration of AI tools with existing business systems to streamline operations.</li>
               <li>End-to-end AI solutions designed to enhance decision-making and operational efficiency.</li>
             </ul>
-            <p className="text-lg mb-6 leading-relaxed font-semibold text-foreground">The AI revolution is not just a trend; it's a fundamental shift in how businesses operate. </p>
+            <p className="text-lg mb-6 leading-relaxed font-semibold text-foreground">The AI revolution is not just a trend; it's a fundamental shift in how businesses operate. </p>
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-70"></div>
