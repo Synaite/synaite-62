@@ -52,9 +52,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold text-foreground mb-2">LinkedIn</h3>
               <p className="text-muted-foreground text-sm mb-4">Connect with us on LinkedIn</p>
               <p className="text-foreground mb-4">Tomos Ormsby</p>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10" onClick={() => window.open("https://linkedin.com/company/fusentra", "_blank")}>
-                Copy link
-              </Button>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10" onClick={() => window.open("https://linkedin.com/company/fusentra", "_blank")}>Copy Link</Button>
             </div>
           </div>
         </div>
