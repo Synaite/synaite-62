@@ -1,9 +1,19 @@
+
 import { Mail, Phone, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
+import { useToast } from "@/hooks/use-toast";
+
 const ContactSection = () => {
+  const { toast } = useToast();
+  
   const handleCopyText = (text: string) => {
     navigator.clipboard.writeText(text);
+    toast({
+      title: "Copied to clipboard",
+      description: "Successfully copied to clipboard",
+    });
   };
+  
   return <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#D6E8FF] to-[#F6FBFF] transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -52,7 +62,9 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold text-foreground mb-2">LinkedIn</h3>
               <p className="text-muted-foreground text-sm mb-4">Connect with us on LinkedIn</p>
               <p className="text-foreground mb-4">Tomos Ormsby</p>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10" onClick={() => window.open("https://linkedin.com/company/fusentra", "_blank")}>Copy Link</Button>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10" onClick={() => window.open("https://www.linkedin.com/in/tomos-ormsby-63592134b/", "_blank")}>
+                Visit Profile
+              </Button>
             </div>
           </div>
         </div>
