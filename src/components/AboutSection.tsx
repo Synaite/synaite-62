@@ -1,15 +1,13 @@
 import { GradientButton } from "./ui/gradient-button";
-
 const AboutSection = () => {
-  return (
-    <section className="px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#EEF5FF] to-[#D6E8FF] transition-colors duration-300 py-[60px]">
+  return <section className="px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#EEF5FF] to-[#D6E8FF] transition-colors duration-300 py-[60px]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">ABOUT US</h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-muted-foreground text-lg mb-6 leading-relaxed mx-0 my-0 px-0 font-medium">Fusentra, is a consultancy dedicated to crafting bespoke AI solutions that drive efficiency and cost savings across various industries. In this era of rapid technological advancement, businesses that fail to integrate AI risk falling behind.</p>
+            <p className="text-muted-foreground text-lg mb-6 leading-relaxed mx-0 my-0 px-0 font-medium">Synaite, is a consultancy dedicated to crafting bespoke AI solutions that drive efficiency and cost savings across various industries. In this era of rapid technological advancement, businesses that fail to integrate AI risk falling behind.</p>
             <h3 className="text-2xl font-semibold text-foreground mb-4">What We're Building:</h3>
             <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-6">
               <li>Tailored AI assistants that automate routine tasks, from customer inquiries to data analysis.</li>
@@ -24,8 +22,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;

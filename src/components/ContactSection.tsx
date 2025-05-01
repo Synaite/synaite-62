@@ -1,12 +1,10 @@
 import { Mail, Phone, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
-
 const ContactSection = () => {
   const handleCopyText = (text: string) => {
     navigator.clipboard.writeText(text);
   };
-  return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#D6E8FF] to-[#F6FBFF] transition-colors duration-300">
+  return <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-[#D6E8FF] to-[#F6FBFF] transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">CONNECT WITH US</h2>
@@ -39,7 +37,7 @@ const ContactSection = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Email Us</h3>
               <p className="text-muted-foreground text-sm mb-4">Get in touch via email</p>
-              <p className="text-foreground mb-4">tom@fusentra.com</p>
+              <p className="text-foreground mb-4">tom@synaite.com</p>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10" onClick={() => handleCopyText("tom@fusentra.com")}>
                 Copy email
               </Button>
@@ -61,8 +59,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
