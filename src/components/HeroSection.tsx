@@ -1,11 +1,8 @@
-
 import { GradientButton } from "./ui/gradient-button";
 import { AuroraBackground } from "./ui/aurora-background";
 import CalendlyDialog from "./CalendlyDialog";
-
 const HeroSection = () => {
-  return (
-    <AuroraBackground className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white via-[#F6FBFF] to-[#EEF5FF]">
+  return <AuroraBackground className="py-16 md:py-24 bg-gradient-to-b from-white via-[#F6FBFF] to-[#EEF5FF] lg:py-0">
       <section className="flex flex-col items-center justify-center min-h-[80vh] text-center px-4 max-w-7xl mx-auto">
         <div className="relative z-10">
           <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur-3xl opacity-30 -z-10"></div>
@@ -22,8 +19,6 @@ const HeroSection = () => {
           </CalendlyDialog>
         </div>
       </section>
-    </AuroraBackground>
-  );
+    </AuroraBackground>;
 };
-
 export default HeroSection;
