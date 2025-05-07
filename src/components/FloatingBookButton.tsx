@@ -32,7 +32,7 @@ const FloatingBookButton = () => {
       <CalendlyDialog>
         <GradientButton 
           size="lg" 
-          className="shadow-lg shadow-primary/20 hover:shadow-primary/30 hover:scale-105 transition-all duration-300"
+          className="shadow-lg shadow-primary/20 hover:shadow-primary/30 hover:scale-105 transition-all duration-300 animate-bounce hover:animate-none"
         >
           <CalendarDays className="mr-2" />
           Book a Call
