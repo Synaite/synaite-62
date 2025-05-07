@@ -37,7 +37,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300 overflow-hidden">
       <Navbar />
-      <main className="pt-16"> {/* Add padding-top to account for fixed navbar */}
+      <main> {/* Removed the pt-16 padding to let the HeroSection handle it */}
         <HeroSection />
         <AboutSection />
         <FeaturesSection />
