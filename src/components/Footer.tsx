@@ -1,8 +1,13 @@
+
 import React from 'react';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="py-4 text-center text-white bg-gray-800">
+  return (
+    <footer className="py-4 text-center text-white bg-darkCard">
       <p>&copy; {currentYear} Fusentra</p>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
